@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3786f2f001.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <title>Encriptador - Alura Challenge #1</title>
+</head>
+
+<body>
+    <main>
+        <div class="contenedorTexto">
+            <img src="imagenes/logo.png">
+            <textarea id="texto" placeholder="Ingrese el texto aquí"></textarea>
+            <p><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos</p>
+            <div class="botonera">
+                <input type="button" id="btnEncriptar" value="Encriptar" onclick="validarMayusculas()";/>
+                <input type="button" id="btnDesencriptar" value="Desencriptar" onclick="desencriptar()" />
+                <i id="refresh" class="fa-solid fa-arrow-rotate-right" onclick="borrarTodo()"></i>
+            </div>
+        </div>
+      
+        <div class="contenedorEncriptado">
+            <div id="mensajeNoEncontrado">
+                <img src="imagenes/noencontrado.png">
+                <div class="contenedorMsj">
+                    <p id="uno">Ningún mensaje fue encontrado</p>
+                    <p id="dos">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+            <div id="textoEncriptado">
+                <textarea id="tres"></textarea>
+                <input type="button" id="btnCopiar" value="Copiar" onclick="copiar()" />
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <p class="wow fadeInUp" data-wow-delay="0.6s">Daniel Alejandro Morales Castillo - Software Engineer Student</p>
+                    <ul class="social-icon text-center">
+                        <li><a href="https://www.facebook.com/AzureCloudWeekMLSA" target= "_blank" class="fa fa-facebook wow fadeInUp" data-wow-delay="1s"></a></li>
+                        <li><a href="https://www.instagram.com/azurecloud.week/?hl=es-la"  target= "_blank" class="fa fa-instagram wow fadeInUp" data-wow-delay="2s"></a></li>
+                        <li><a href="https://www.linkedin.com/in/danielmcastillo/"  target= "_blank" class="fa fa-linkedin wow fadeInUp" data-wow-delay="2s"></a></li>
+                        <li><a href="https://studentambassadors.microsoft.com/es-es" target = "_blank " class="fab fa-microsoft wow fadeInUp" data-wow-delay="1.6s"></a></li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
